@@ -4,7 +4,7 @@ This project contains a working mock mobile shopping web app and complete QA tes
 
 ## Project Objective
 
-The objective of this project is to demonstrate mobile app QA testing skills through a realistic mock application, functional test cases, bug report examples, reproduction steps, expected vs actual results, and a structured test summary report.
+The objective of this project is to demonstrate mobile app QA testing skills through a realistic mock application, functional test cases, bug report examples, reproduction steps, expected vs actual results, screenshots, and a structured test summary report.
 
 ## Application Features
 
@@ -54,7 +54,41 @@ mobile-app-qa-test-plan-demo
 │   └── test_summary_report.md
 │
 └── screenshots
+    ├── login_screen.png
+    ├── wrong_login.png
+    ├── home_screen.png
+    ├── product_not_found.png
+    ├── cart_screen.png
+    ├── remove_from_cart.png
+    ├── checkout_validation.png
+    └── order_success.png
 ```
+
+## Application Screenshots
+
+### Login Screen
+![Login Screen](screenshots/login_screen.png)
+
+### Wrong Login Validation
+![Wrong Login](screenshots/wrong_login.png)
+
+### Home / Product Screen
+![Home Screen](screenshots/home_screen.png)
+
+### Product Not Found
+![Product Not Found](screenshots/product_not_found.png)
+
+### Cart Screen
+![Cart Screen](screenshots/cart_screen.png)
+
+### Remove from Cart
+![Remove from Cart](screenshots/remove_from_cart.png)
+
+### Checkout Validation
+![Checkout Validation](screenshots/checkout_validation.png)
+
+### Order Success
+![Order Success](screenshots/order_success.png)
 
 ## QA Documentation
 
@@ -71,8 +105,29 @@ For best experience, use browser responsive mode or mobile screen size.
 
 ## GitHub Pages
 
-After enabling GitHub Pages, the live app can be opened from the repository Pages link.
+Live Demo: https://rohanr2906-byte.github.io/mobile-app-qa-test-plan-demo/
+
+## Test Scope
+
+The following workflows were tested manually:
+
+- Login with valid credentials
+- Login with invalid credentials
+- Product search with valid keyword
+- Product search with unavailable product
+- Add product to cart
+- Remove product from cart
+- Checkout without address
+- Checkout with valid address
+- Logout functionality
 
 ## Project Outcome
 
-This project demonstrates mobile QA testing fundamentals, including test planning, functional test case design, bug reporting, reproduction steps, expected vs actual result documentation, and test summary reporting using a working mock mobile web application.
+This project demonstrates mobile QA testing fundamentals, including test planning, functional test case design, bug reporting, reproduction steps, expected vs actual result documentation, screenshot evidence, and test summary reporting using a working mock mobile web application.
+
+## Future Improvements
+
+- Add automated UI tests using Playwright
+- Add responsive testing for different mobile screen sizes
+- Add backend API integration
+- Add test execution report in HTML format
