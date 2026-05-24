@@ -1,49 +1,50 @@
-# Mobile App QA Test Plan Demo
+# DemoShop Mobile QA Testing Project
 
-This is a self-developed mobile app QA documentation project for a mock shopping application called DemoShop Mobile App.
+This project contains a working mock mobile shopping web app and complete QA testing documentation.
 
 ## Project Objective
 
-The objective of this project is to demonstrate basic mobile application testing skills through functional test cases, bug reports, reproduction steps, expected vs actual results, and a structured test summary report.
+The objective of this project is to demonstrate mobile app QA testing skills through a realistic mock application, functional test cases, bug report examples, reproduction steps, expected vs actual results, and a structured test summary report.
 
-## Application Under Test
+## Application Features
 
-DemoShop Mobile App is a mock e-commerce mobile application with the following features:
-
-- User login
+- Valid login
+- Invalid login validation
 - Product search
-- Product details page
+- No result search validation
 - Add to cart
-- Checkout
-- Logout
+- Remove from cart
+- Checkout validation
+- Order confirmation
+- Logout functionality
+
+## Test Login
+
+| Field | Value |
+|---|---|
+| Username | testuser@example.com |
+| Password | Test@123 |
 
 ## Tools Used
 
+- HTML
+- CSS
+- JavaScript
 - Manual Testing
 - Functional Testing
 - Mobile QA Testing
-- Test Case Design
 - Bug Reporting
 - Test Summary Reporting
 - GitHub Documentation
-
-## Testing Scope
-
-The following modules were considered for testing:
-
-- Login functionality
-- Search functionality
-- Product listing
-- Add to cart
-- Checkout flow
-- Logout functionality
-- Basic UI validation
 
 ## Project Structure
 
 ```text
 mobile-app-qa-test-plan-demo
 │
+├── index.html
+├── style.css
+├── script.js
 ├── README.md
 │
 ├── docs
@@ -53,3 +54,25 @@ mobile-app-qa-test-plan-demo
 │   └── test_summary_report.md
 │
 └── screenshots
+```
+
+## QA Documentation
+
+- Test Plan: `docs/test_plan.md`
+- Test Cases: `docs/test_cases.md`
+- Bug Report Examples: `docs/bug_reports.md`
+- Test Summary Report: `docs/test_summary_report.md`
+
+## How to Run
+
+Open `index.html` in a browser.
+
+For best experience, use browser responsive mode or mobile screen size.
+
+## GitHub Pages
+
+After enabling GitHub Pages, the live app can be opened from the repository Pages link.
+
+## Project Outcome
+
+This project demonstrates mobile QA testing fundamentals, including test planning, functional test case design, bug reporting, reproduction steps, expected vs actual result documentation, and test summary reporting using a working mock mobile web application.

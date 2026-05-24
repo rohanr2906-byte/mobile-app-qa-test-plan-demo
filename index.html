@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DemoShop Mobile App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="phone-frame">
+    <section id="loginScreen" class="screen active">
+      <div class="app-logo">🛒</div>
+      <h1>DemoShop</h1>
+      <p class="subtitle">Mock Mobile Shopping App</p>
+
+      <div class="form-group">
+        <label>Email</label>
+        <input id="username" type="email" placeholder="testuser@example.com" />
+      </div>
+
+      <div class="form-group">
+        <label>Password</label>
+        <input id="password" type="password" placeholder="Test@123" />
+      </div>
+
+      <button id="loginBtn" class="primary-btn">Login</button>
+      <p id="loginError" class="error-message"></p>
+
+      <div class="test-data-box">
+        <strong>Test Login:</strong>
+        <span>testuser@example.com / Test@123</span>
+      </div>
+    </section>
+
+    <section id="homeScreen" class="screen">
+      <header class="app-header">
+        <div>
+          <h2>DemoShop</h2>
+          <p>Welcome, Test User</p>
+        </div>
+        <button id="logoutBtn" class="small-btn">Logout</button>
+      </header>
+
+      <div class="search-box">
+        <input id="searchInput" type="text" placeholder="Search products..." />
+        <button id="searchBtn">Search</button>
+      </div>
+
+      <nav class="bottom-tabs">
+        <button id="productsTab" class="tab active-tab">Products</button>
+        <button id="cartTab" class="tab">Cart <span id="cartCount">0</span></button>
+      </nav>
+
+      <section id="productsSection" class="content-section active-section">
+        <h3>Products</h3>
+        <div id="productList" class="product-list"></div>
+        <p id="noResults" class="info-message"></p>
+      </section>
+
+      <section id="cartSection" class="content-section">
+        <h3>Your Cart</h3>
+        <div id="cartItems"></div>
+        <p id="emptyCartMessage" class="info-message">Cart is empty.</p>
+
+        <div class="checkout-box">
+          <label>Delivery Address</label>
+          <textarea id="addressInput" placeholder="Enter delivery address"></textarea>
+          <button id="checkoutBtn" class="primary-btn">Place Order</button>
+          <p id="checkoutMessage"></p>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
